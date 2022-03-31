@@ -12,6 +12,7 @@ module.exports = {
       black: "#000000",
     },
     fontFamily: {
+      'sheffield': "'mrsheffield-pro', sans-serif",
       'imbue': "'Imbue', serif",
       'mina': "'mina', serif",
       'roboto': "'Roboto', sans-serif",
