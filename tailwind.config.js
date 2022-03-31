@@ -18,7 +18,11 @@ module.exports = {
       'slab': "'Roboto Slab', serif",
     },
     backgroundImage: {
-      'heroBg': "url('/img/marble_bg.jpg')",
+      'heroBg': "url('/img/bg.jpg')",
+      'heroBg2': "url('/img/bg2.jpg')",
+      'heroBg3': "url('/img/bg3.jpg')",
+      'heroBg4': "url('/img/bg4.jpg')",
+      'heroBg5': "url('/img/bg5.jpg')",
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
