@@ -15,6 +15,9 @@
     h3 {
         @apply font-roboto font-semibold text-xl md:text-2xl lg:text-3xl;
     }
+    h4 {
+        @apply font-roboto font-semibold text-lg;
+    }
     p {
         @apply font-slab text-left text-sm md:text-base lg:text-base;
     }
