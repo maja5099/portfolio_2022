@@ -11,6 +11,9 @@ module.exports = {
       width: {
         '5.5': '1.3rem',
       },
+      transitionDuration: {
+        '900': '900ms',
+      },
     },
     colors: {
       beige: "#ECE8DD",
