@@ -1,7 +1,17 @@
 module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      scale: {
+        '115': '1.15',
+      },
+      height: {
+        '5.5': '1.3rem',
+      },
+      width: {
+        '5.5': '1.3rem',
+      },
+    },
     colors: {
       beige: "#ECE8DD",
       beigeHover: "hsl(44, 28%, 92%)",
