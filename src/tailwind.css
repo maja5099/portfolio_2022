@@ -10,7 +10,7 @@
         @apply font-imbue uppercase text-6xl md:text-7xl lg:text-8xl;
     }
     h2 {
-        @apply font-mina font-medium text-3xl md:text-4xl lg:text-5xl;
+        @apply font-sheffield font-medium text-6xl  lg:text-7xl;
     }
     h3 {
         @apply font-roboto font-semibold text-xl md:text-2xl lg:text-3xl;
