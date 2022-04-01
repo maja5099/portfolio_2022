@@ -14,6 +14,13 @@ module.exports = {
       transitionDuration: {
         '900': '900ms',
       },
+      spacing: {
+        '5px': '0.313rem',
+        '10px': '0.625rem',
+        '15px': '0.938rem',
+        '20px': '1.25rem',
+        '25px': '1.563rem',
+      },
     },
     colors: {
       beige: "#ECE8DD",
