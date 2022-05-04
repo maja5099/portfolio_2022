@@ -37,6 +37,7 @@ module.exports = {
       'mina': "'mina', serif",
       'roboto': "'Roboto', sans-serif",
       'slab': "'Roboto Slab', serif",
+      'lato': "'Lato', sans-serif",
     },
     backgroundImage: {
       'heroBg': "url('/img/bg.jpg')",
