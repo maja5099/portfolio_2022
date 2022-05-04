@@ -26,6 +26,9 @@ module.exports = {
         spacingH3: '.2em',
         spacingH2: '.315em',
       },
+      lineHeight: {
+        'myHeight': '1.875rem',
+      },
     },
     colors: {
       beige: "#ECE8DD",
