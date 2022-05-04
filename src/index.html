@@ -19,17 +19,53 @@
   </head>
 
   <body>
-    <script type="module" src="index.js"></script>
+    <!-- <script type="module" src="index.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
      <!-- NAV START -->
      <header class="bg-beige">
-      <div class="max-w-screen-xl h-20 items-center place-content-end flex align-middle mx-auto">
-          <nav class="space-x-5 md:space-x-10 lg:space-x-20 text-sm font-medium">
-            <a class="font-roboto text-base border-b-2 pb-2 border-beige hover:border-brown transform duration-700 hover:scale-110 hover:cursor-pointer" href="#about">Om mig</a>
-            <a class="font-roboto text-base border-b-2 pb-2 border-beige hover:border-brown transform duration-700 hover:scale-110 hover:cursor-pointer" href="#projects">Mine projekter</a>
-            <a class="font-roboto text-base border-b-2 pb-2 border-beige hover:border-brown transform duration-700 hover:scale-110 hover:cursor-pointer" href="#contact">Kontakt mig</a>
-          </nav>
+      <div class="max-w-screen-xl h-20 hidden md:flex lg:flex items-center place-content-end  align-middle mx-auto">
+          <nav class="space-x-5  pr-5  md:space-x-10 lg:space-x-20 text-sm font-medium">
+            <a class="font-roboto text-base hover:font-semibold hover:cursor-pointer" href="#about">Om mig</a>
+            <a class="font-roboto text-base hover:font-semibold hover:cursor-pointer" href="#projects">Mine projekter</a>
+            <a class="font-roboto text-base hover:font-semibold hover:cursor-pointer" href="test.html">Kompetencer og færdigheder</a>
+            <a class="font-roboto text-base hover:font-semibold hover:cursor-pointer" href="#contact">Kontakt mig</a>
       </div>
+
+      <!-- Mobile menu button -->
+			<div class="md:hidden flex h-20 place-content-end mr-5 items-center">
+        <nav x-data="{ open: false }">
+          <button class="text-beige w-10 h-10 relative mobile-menu-button focus:outline-none " @click="open = !open">
+              <span class="sr-only">Open main menu</span>
+              <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+                  <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-grey transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+                  <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-grey   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
+                  <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-grey transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+              </div>
+          </button>
+      </nav>
+			</div>
+
+      <!-- mobile menu -->
+			<div class="hidden bg-beigeT w-screen mobile-menu ">
+				<ul class="text-center text-sm space-y-5 pb-10">
+					<li class="active"><a href="index.html" class="block font-semibold">Forside</a></li>
+					<li><a href="#about" class="block transition duration-300 hover:font-semibold">Om mig</a></li>
+					<li><a href="#projects" class="block transition duration-300 hover:font-semibold">Mine projekter</a></li>
+					<li><a href="#contact" class="block transition duration-300 hover:font-semibold">Kompetencer og færdigheder</a></li>
+          <li><a href="#contact" class="block transition duration-300 hover:font-semibold">Kontakt</a></li>
+        </ul>
+			</div>
+
+			<script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+	        menu.classList.toggle("hidden");
+        });
+			</script>
     </header>
     <!-- NAV END -->
 
