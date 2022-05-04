@@ -6,16 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="tailwind.css" />
-    <!-- FONTS START -->
+
+    <!-- GOOGLE FONTS START -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Imbue:wght@600&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS END -->
+
+    <!-- ADOBE FONTS START -->
     <link rel="stylesheet" href="https://use.typekit.net/ttj2wft.css">
-    <!-- FONTS END -->
+    <!-- ADOBE FONTS START -->
+
+    <!-- ICON START -->
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    
+    <!-- ICON END -->
   </head>
 
   <body>
@@ -29,7 +38,7 @@
           <nav class="space-x-5  pr-5  md:space-x-10 lg:space-x-20 text-sm font-medium">
             <a class="font-roboto text-base hover:font-semibold hover:cursor-pointer" href="#about">Om mig</a>
             <a class="font-roboto text-base hover:font-semibold hover:cursor-pointer" href="#projects">Mine projekter</a>
-            <a class="font-roboto text-base hover:font-semibold hover:cursor-pointer" href="test.html">Kompetencer og færdigheder</a>
+            <a class="font-roboto text-base hover:font-semibold hover:cursor-pointer" href="#skills">Kompetencer og færdigheder</a>
             <a class="font-roboto text-base hover:font-semibold hover:cursor-pointer" href="#contact">Kontakt mig</a>
       </div>
 
@@ -53,7 +62,7 @@
 					<li class="active"><a href="index.html" class="block font-semibold">Forside</a></li>
 					<li><a href="#about" class="block transition duration-300 hover:font-semibold">Om mig</a></li>
 					<li><a href="#projects" class="block transition duration-300 hover:font-semibold">Mine projekter</a></li>
-					<li><a href="#contact" class="block transition duration-300 hover:font-semibold">Kompetencer og færdigheder</a></li>
+					<li><a href="#skills" class="block transition duration-300 hover:font-semibold">Kompetencer og færdigheder</a></li>
           <li><a href="#contact" class="block transition duration-300 hover:font-semibold">Kontakt</a></li>
         </ul>
 			</div>
@@ -71,14 +80,35 @@
 
     <!-- HERO START -->
     <section class="bg-heroBg5 bg-cover bg-center">
-      <img class="absolute pl-5 md:pl-7 lg:pl-10 -mt-10 md:-mt-14 lg:-mt-16 h-24 md:h-32 lg:h-36" src="/img/portfolio_logo.png" alt="">
+      <img class="absolute opacity-40 pl-5 md:pl-7 lg:pl-10 -mt-10 md:-mt-14 lg:-mt-16 h-24 md:h-32 lg:h-36" src="/img/portfolio_logo.png" alt="">
       <div class="max-w-screen-xl px-4 py-32 mx-auto lg:h-150 lg:items-center lg:flex">
-        <div class="max-w-5xl mx-auto text-center">
-          <h1>
+        <!-- LG SCREEN START -->
+        <div class="hidden md:block max-w-5xl mx-auto text-center">
+          <h1 class="lg:ml-8 font-medium">
             Maja Birch Sørensen
           </h1>      
-          <h2 class="mt-20 font-sheffield text-6xl md:text-7xl lg:text-8xl text-center pl-2 pr-2 lg:pl-0 lg:pr-0">
-            Digital designer og front-end developer
+          <h2 class="lg:-mt-5 font-lato text-xs md:text-base lg:text-2xl text-center pl-2 pr-2 lg:pl-0 lg:pr-0">
+            Digital &nbsp;&nbsp;&nbsp;&nbsp; designer og front-end developer
+          </h2>
+        </div>
+
+        <!-- MD SCREEN START -->
+        <div class="lg:hidden hidden md:hidden max-w-5xl mx-auto text-center">
+          <h1 class="md:-ml-20 font-medium">
+            Maja Birch Sørensen
+          </h1>      
+          <h2 class="md:-mt-3 font-lato text-xs md:text-base lg:text-2xl text-center pl-2 pr-2 lg:pl-0 lg:pr-0">
+            Digital &nbsp;&nbsp;&nbsp; designer og front-end developer
+          </h2>
+        </div>
+
+        <!-- SM SCREEN START -->
+        <div class="lg:hidden md:hidden max-w-5xl mx-auto text-center">
+          <h1 class="font-medium">
+            Maja Birch Sørensen
+          </h1>      
+          <h2 class="-mt-2 font-lato text-xs md:text-base lg:text-2xl text-center pl-2 pr-2 lg:pl-0 lg:pr-0">
+            Digital &nbsp;&nbsp; designer og front-end developer
           </h2>
         </div>
       </div>
@@ -246,7 +276,7 @@
     <!-- PROJECT 1 END -->
 
     <!-- MY SKILLS 2 START -->
-    <section>
+    <section id="skills">
       <div class="max-w-screen-xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <h2 class="text-center mb-14">
           Mine kompetencer og færdigheder

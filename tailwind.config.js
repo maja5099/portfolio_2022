@@ -21,6 +21,11 @@ module.exports = {
         '20px': '1.25rem',
         '25px': '1.563rem',
       },
+      letterSpacing: {
+        spacingP: '.2em',
+        spacingH3: '.2em',
+        spacingH2: '.315em',
+      },
     },
     colors: {
       beige: "#ECE8DD",
