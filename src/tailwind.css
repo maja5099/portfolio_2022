@@ -40,13 +40,13 @@
   
     .scrollbar::-webkit-scrollbar-track {
       border-radius: 100vh;
-      background: #E0DAD0;
+      background: #DBD2C4;
     }
   
     .scrollbar::-webkit-scrollbar-thumb {
       background: #3A3A3A;
       border-radius: 100vh;
-      border: 1px solid #E0DAD0;
+      border: 1px solid #DBD2C4;
     }
   
     .scrollbar::-webkit-scrollbar-thumb:hover {
