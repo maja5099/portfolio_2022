@@ -31,7 +31,7 @@ module.exports = {
       },
     },
     colors: {
-      beige: "#E0DAD0",
+      beige: "#DBD2C4",
       beigeHover: "hsl(44, 28%, 92%)",
       brown: "#D1C7B8",
       // brown: "#DFD5CB",
