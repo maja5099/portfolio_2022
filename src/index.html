@@ -47,7 +47,7 @@
         <nav x-data="{ open: false }">
           <button class="text-beige w-10 h-10 relative mobile-menu-button focus:outline-none" @click="open = !open">
               <span class="sr-only">Open main menu</span>
-              <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+              <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
                   <span aria-hidden="true" class="block absolute text-base font-lato tracking-wide h-0.5 w-5 bg-grey transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
                   <span aria-hidden="true" class="block absolute text-base font-lato tracking-wide h-0.5 w-5 bg-grey transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
                   <span aria-hidden="true" class="block absolute text-base font-lato tracking-wide h-0.5 w-5 bg-grey transform transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
@@ -74,6 +74,11 @@
         btn.addEventListener("click", () => {
 	        menu.classList.toggle("hidden");
         });
+
+        // function active(){
+        //   document.querySelector("#active").classList.remove("active");
+        //   this.classList.add("active");
+        // }
 			</script>
     </header>
     <!-- NAV END -->
@@ -190,17 +195,43 @@
     </aside>
     <!-- ABOUT ME END -->
 
-    <!-- PROJECT 1 START -->
+    <!-- PROJECTS START -->
     <section id="projects">
       <aside>
         <div class="px-4 py-16 mt-24 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
           <h3 class="text-center mb-14">
             Mine projekter
           </h3>
+          <!-- PROJECT 1 START -->
           <div class="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-2">
-            <div class="p-8 text-center text-grey bg-beige sm:p-16 lg:py-24">
+            <div class="p-8 text-center text-grey bg-beige">
+              <div class="text-right pb-10 space-x-2">
+                <strong class="border text-red-500 border-current uppercase px-5 py-1.5 rounded-full text-[10px] tracking-wide">
+                  WordPress
+                </strong>
+                <strong class="border border-red-500 text-white bg-red-500 uppercase px-5 py-1.5 rounded-full text-[10px] tracking-wide">
+                  Premiere Pro
+                </strong>
+                <strong class="border border-red-500 text-red-500 bg-red-100 uppercase px-5 py-1.5 rounded-full text-[10px] tracking-wide">
+                  Adobe Xd
+                </strong>
+                <strong class="border border-red-500 text-red-500 bg-red-100 uppercase px-5 py-1.5 rounded-full text-[10px] tracking-wide">
+                  WooCommerce
+                </strong>
+              </div>
+
+              <div class="flex flex-row lg:space-y-0 space-x-3 lg:space-x-5 mt-5 ">
+                <p class="font-lato border font-semibold uppercase px-4 py-1 rounded-full w-fit text-[10px] tracking-wide">WordPress</p>
+                <p class="font-lato border font-semibold uppercase px-4 py-1 rounded-full w-fit text-[10px] tracking-wide">WordPress</p>
+                <p class="font-lato border font-semibold uppercase px-4 py-1 rounded-full w-fit text-[10px] tracking-wide">WordPress</p>
+                <p class="font-lato border font-semibold uppercase px-4 py-1 rounded-full w-fit text-[10px] tracking-wide">WordPress</p>
+                <p class="font-lato border font-semibold uppercase px-4 py-1 rounded-full w-fit text-[10px] tracking-wide">WordPress</p>
+                <p class="font-lato border font-semibold uppercase px-4 py-1 rounded-full w-fit text-[10px] tracking-wide">WordPress</p>
+              </div>
+
+              <div class="sm:p-16 lg:py-10">
               <div class="max-w-lg mx-auto space-y-8">
-                <h4>
+                <h4 class="text-left">
                   Site til Almeja Space
                 </h4>
                 <p class="leading-myHeight">
@@ -212,7 +243,7 @@
                 </p>
     
                 <!-- Button start -->
-                <button>
+                <button class="">
                   <a class="relative inline-flex items-center px-8 py-3 overflow-hidden text-beige bg-darkGrey hover:bg-greyHover rounded-lg group focus:outline-none focus:ring transform duration-700 hover:scale-105 hover:cursor-pointer" href="https://majabirchsorensen.dk/kea/10_eksamen/eksamen_almeja_space/" target="_blank">
                     <span class="absolute left-0 duration-900 transition-transform -translate-x-full group-hover:translate-x-4">
                       <svg
@@ -234,6 +265,7 @@
                 <!-- Button end -->
               </div>
             </div>
+          </div>
           
               <div class="relative lg:order-first lg:h-full lg:w-full inline-flex items-center">
                 <a href="https://majabirchsorensen.dk/kea/10_eksamen/eksamen_almeja_space/projektgalleri/" target="_blank">
@@ -247,40 +279,133 @@
           </div>
 
           <!-- PICTURES START -->
-          <div class="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 mt-10">
-            <div class="relative lg:order-first lg:h-full lg:w-full inline-flex items-center">
+          <div class="flex lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 mt-5 flex-col">
+           
+            <div class="">
               <a href="https://majabirchsorensen.dk/kea/10_eksamen/eksamen_almeja_space/projektgalleri/" target="_blank">
                 <img
-                  src="/img/almeja_styletile.png"
+                  src="/img/almeja_styletile_2.jpg"
                   alt="Billede af projektgalleri på hjemmeside til Almeja Space"
-                  class="relative inset-0 object-cover inline-flex flex-shrink-0 justify-center items-center w-full h-auto"
+                  class="h-full w-auto"
                 />
               </a>
             </div>
-            <div class="relative lg:order-first lg:h-full lg:w-full inline-flex items-center">
+            <div class="">
               <a href="https://majabirchsorensen.dk/kea/10_eksamen/eksamen_almeja_space/projektgalleri/" target="_blank">
                 <img
-                  src="/img/almeja_styletile.png"
+                  src="/img/projekter_2.jpg"
                   alt="Billede af projektgalleri på hjemmeside til Almeja Space"
-                  class="relative inset-0 object-cover inline-flex flex-shrink-0 justify-center items-center w-full h-auto"
+                  class="h-full w-auto"
                 />
               </a>
             </div>
-            <div class="relative lg:order-first col-span-2 lg:col-span-1 lg:h-full lg:w-full inline-flex items-center">
+            <div class="">
               <a href="https://majabirchsorensen.dk/kea/10_eksamen/eksamen_almeja_space/projektgalleri/" target="_blank">
                 <img
-                  src="/img/almeja_styletile.png"
+                  src="/img/services_2.jpg"
                   alt="Billede af projektgalleri på hjemmeside til Almeja Space"
-                  class="relative inset-0 object-cover inline-flex flex-shrink-0 justify-center items-center w-full h-auto"
+                  class="h-full w-auto"
                 />
               </a>
             </div>
+         
           </div>
           <!-- PICTURES END -->
+          <!-- PROJECT 1 END -->
+          
+          <!-- PROJECT 2 START -->
+          <div class="grid grid-cols-1 py-20 gap-4 md:grid-cols-1 lg:grid-cols-2">
+            <div class="flex-row">
+            <div class="p-8 text-center text-grey bg-beige">
+              <div class="text-right pb-10 space-x-2">
+                <strong class="border text-red-500 border-current uppercase px-5 py-1.5 rounded-full text-[10px] tracking-wide">
+                  WordPress
+                </strong>
+                <strong class="border border-red-500 text-white bg-red-500 uppercase px-5 py-1.5 rounded-full text-[10px] tracking-wide">
+                  Premiere Pro
+                </strong>
+                <strong class="border border-red-500 text-red-500 bg-red-100 uppercase px-5 py-1.5 rounded-full text-[10px] tracking-wide">
+                  Adobe Xd
+                </strong>
+                <strong class="border border-red-500 text-red-500 bg-red-100 uppercase px-5 py-1.5 rounded-full text-[10px] tracking-wide">
+                  WooCommerce
+                </strong>
+              </div>
+
+              <div class="sm:p-16 lg:py-10">
+              <div class="max-w-lg mx-auto space-y-8">
+                <h4>
+                  Produktion af egen font
+                </h4>
+                <p class="leading-myHeight">
+                  Som et led på mit studie har jeg arbejdet med fonte, og har blandt andet skabt min egen font 'Unda'. Unda betyder bølge på latin, og jeg var inspireret af bløde former og stærke farver.
+                </p>
+                <p class="mt-5 leading-myHeight">
+                  Projektet blev udarbejdet med programmerne Figma, Adobe Illustrator og PhotoShop.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center p-10">
+            <img
+              src="/img/font.svg"
+              alt="Billede af projektgalleri på hjemmeside til Almeja Space"
+              class="relative inset-0 object-cover inline-flex flex-shrink-0 justify-center items-center h-28 w-auto"
+            />
+          </div>
+        </div>
+          
+          <div class="lg:order-last grid grid-cols-3 grid-rows-2 gap-3 lg:h-full lg:w-full items-center">
+            <div>
+              <img
+                src="/img/green.jpg"
+                alt="Billede af projektgalleri på hjemmeside til Almeja Space"
+                class="relative inset-0 object-cover inline-flex flex-shrink-0 justify-center items-center w-full h-auto"
+              />
+            </div>
+            <div>
+              <img
+                src="/img/red.jpg"
+                alt="Billede af projektgalleri på hjemmeside til Almeja Space"
+                class="relative inset-0 object-cover inline-flex flex-shrink-0 justify-center items-center w-full h-auto"
+              />
+            </div>
+            <div>
+              <img
+                src="/img/blue.jpg"
+                alt="Billede af projektgalleri på hjemmeside til Almeja Space"
+                class="relative inset-0 object-cover inline-flex flex-shrink-0 justify-center items-center w-full h-auto"
+              />
+            </div>
+            <div>
+              <img
+                src="/img/skitse_1.jpg"
+                alt="Billede af projektgalleri på hjemmeside til Almeja Space"
+                class="relative inset-0 object-cover inline-flex flex-shrink-0 justify-center items-center w-full h-auto"
+              />
+            </div>
+            <div>
+              <img
+                src="/img/skitse_2.jpg"
+                alt="Billede af projektgalleri på hjemmeside til Almeja Space"
+                class="relative inset-0 object-cover inline-flex flex-shrink-0 justify-center items-center w-full h-auto"
+              />
+            </div>
+            <div>
+              <img
+                src="/img/figma_1.jpg"
+                alt="Billede af projektgalleri på hjemmeside til Almeja Space"
+                class="relative inset-0 object-cover inline-flex flex-shrink-0 justify-center items-center w-full h-auto"
+              />
+            </div>
+          </div>
+          </div>
         </div>
       </aside>
+      <!-- PROJECT 2 END -->
     </section>
-    <!-- PROJECT 1 END -->
+    <!-- PROJECTS END -->
+    
 
     <!-- TEST START -->
     <section>
