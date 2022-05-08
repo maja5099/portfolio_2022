@@ -32,13 +32,10 @@ module.exports = {
     },
     colors: {
       beige: "#DBD2C4",
-      beigeHover: "hsl(44, 28%, 92%)",
       brown: "#D1C7B8",
       // brown: "#DFD5CB",
       grey: "#3A3A3A",
       greyHover: "hsl(0, 0%, 30%)",
-      darkGrey: "hsl(0, 0%, 20%)",
-      black: "#000000",
     },
     fontFamily: {
       'sheffield': "'mrsheffield-pro', sans-serif",
