@@ -27,14 +27,16 @@
     <!-- ICON END -->
   </head>
 
-  <body class="overflow-y-scroll scrollbar">
+  <body class="overscroll-hidden scrollbar">
     <!-- <script type="module" src="index.js"></script> -->
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
      <!-- NAV START -->
-     <header class="bg-beige">
-      <div class="max-w-screen-xl h-20 hidden md:flex lg:flex items-center place-content-end align-middle mx-auto">
+     <header class="bg-beige bg-opacity-80 sticky top-0 z-50">
+      <img class="absolute opacity-25 pl-3 md:pl-4 lg:pl-5 mt-3 md:mt-4 lg:mt-5 h-24 md:h-28 lg:h-32" src="/img/portfolio_logo.png" alt="">
+      
+      <div class="max-w-screen-xl h-16 hidden md:flex lg:flex items-center place-content-end align-middle mx-auto">
           <nav class="space-x-5 pr-5 md:space-x-10 lg:space-x-20 text-sm font-medium">
             <a class="font-lato tracking-wide text-base hover:font-semibold hover:cursor-pointer" href="#about">Om mig</a>
             <a class="font-lato tracking-wide text-base hover:font-semibold hover:cursor-pointer" href="#projects">Mine projekter</a>
@@ -43,7 +45,7 @@
       </div>
 
       <!-- Mobile menu button -->
-			<div class="md:hidden flex h-20 place-content-end mr-5 items-center">
+			<div class="md:hidden flex h-16 place-content-end mr-5 items-center">
         <nav x-data="{ open: false }">
           <button class="text-beige w-10 h-10 relative mobile-menu-button focus:outline-none" @click="open = !open">
               <span class="sr-only">Open main menu</span>
@@ -85,7 +87,7 @@
 
     <!-- HERO START -->
     <section class="bg-heroBg5 bg-cover bg-center">
-      <img class="absolute opacity-25 pl-5 md:pl-7 lg:pl-10 -mt-10 md:-mt-14 lg:-mt-16 h-24 md:h-32 lg:h-36" src="/img/portfolio_logo.png" alt="">
+  
       <div class="max-w-screen-xl px-4 py-32 mx-auto lg:h-150 lg:items-center lg:flex">
         <!-- LG SCREEN START -->
         <div class="hidden md:block max-w-5xl mx-auto text-center">
