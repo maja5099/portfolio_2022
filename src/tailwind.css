@@ -10,7 +10,7 @@
         @apply font-imbue uppercase text-6xl md:text-7xl lg:text-8xl;
     } */
     h1 {
-        @apply font-sheffield text-5xl md:text-7xl lg:text-8xl;
+        @apply font-sheffield text-6xl md:text-7xl lg:text-8xl;
     }
     h2 {
         @apply font-lato uppercase tracking-spacingH2 text-xs md:text-base lg:text-2xl;
