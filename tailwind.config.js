@@ -29,6 +29,10 @@ module.exports = {
       lineHeight: {
         'myHeight': '1.875rem',
       },
+      fontSize: {
+        'xxs': '.55rem',
+        'label': '.6rem',
+      },
     },
     colors: {
       beige: "#DBD2C4",
