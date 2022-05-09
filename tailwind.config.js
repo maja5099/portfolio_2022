@@ -32,7 +32,7 @@ module.exports = {
       fontSize: {
         'xxs': '.55rem',
         'label': '.6rem',
-        '5.5xl': '4.2rem',
+        '4.5xl': '2.7rem',
       },
     },
     colors: {
