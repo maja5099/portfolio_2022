@@ -34,6 +34,16 @@ module.exports = {
         'label': '.6rem',
         '4.5xl': '2.7rem',
       },
+      animation: {
+        fadeIn: "fadeIn 2.5s ease-in forwards"
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        }
+      }
+      
     },
     colors: {
       beige: "#DBD2C4",
@@ -56,6 +66,9 @@ module.exports = {
       'heroBg4': "url('/img/bg4.jpg')",
       'heroBg5': "url('/img/bg5.jpg')",
     },
+    variants: {
+      animation: ["motion-safe"]
+  }
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };

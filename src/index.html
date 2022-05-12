@@ -192,7 +192,32 @@
     <!-- ABOUT ME END -->
 
     <!-- PROJECTS START -->
-    <section id="projects">
+
+    <script>
+      const callback = function (entries) {
+      entries.forEach((entry) => {
+        console.log(entry);
+
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fadeIn");
+        } else {
+          entry.target.classList.remove("animate-fadeIn");
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback);
+
+    const targets = document.querySelectorAll(".js-show-on-scroll");
+    targets.forEach(function (target) {
+      target.classList.add("opacity-0");
+      observer.observe(target);
+    });
+    </script>
+
+
+
+    <section id="projects ">
       <aside>
         <div class="px-4 mt-24 lg:mt-52 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
           <h3 class="text-center mb-10 lg:mb-12">
@@ -285,7 +310,6 @@
                 </a>
               </div>
           </div>
-
           <!-- PICTURES START -->
           <!-- <div class="flex lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 mt-5 flex-col">
             <div class="">
@@ -320,8 +344,9 @@
           <!-- PROJECT 1 END -->
           
           <!-- PROJECT 2 START -->
+          
           <div class="grid grid-cols-1 inline-flex items-center mt-14 lg:mt-32 gap-4 md:grid-cols-1 lg:grid-cols-2">
-            <div class="flex-row ">
+            <div class="flex-row">
             <div class="p-8 md-p-14 py-10 text-center text-grey bg-beige">
 
               
@@ -404,6 +429,7 @@
                 class="relative inset-0 object-cover inline-flex flex-shrink-0 justify-center items-center w-full h-auto"
               />
             </div>
+          </div>
           </div>
           </div>
           <!-- PROJECT 2 END -->
