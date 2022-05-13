@@ -60,11 +60,11 @@ module.exports = {
       'lato': "'Lato', sans-serif",
     },
     backgroundImage: {
-      'heroBg': "url('/img/bg.jpg')",
-      'heroBg2': "url('/img/bg2.jpg')",
-      'heroBg3': "url('/img/bg3.jpg')",
-      'heroBg4': "url('/img/bg4.jpg')",
-      'heroBg5': "url('/img/bg5.jpg')",
+      'heroBg1': "url('/img/bg/bg1.jpg')",
+      'heroBg2': "url('/img/bg/bg2.jpg')",
+      'heroBg3': "url('/img/bg/bg3.jpg')",
+      'heroBg4': "url('/img/bg/bg4.jpg')",
+      'heroBg5': "url('/img/bg/bg5.jpg')",
     },
     variants: {
       animation: ["motion-safe"]
